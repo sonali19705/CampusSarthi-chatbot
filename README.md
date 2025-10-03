@@ -42,7 +42,6 @@ It provides instant answers about courses, faculty, library, exams, and general 
 
 ## Project Structure
 CampusSarthi-chatbot/
-│
 ├── frontend/           # HTML, CSS, JS files
 ├── backend/            # FastAPI backend files
 ├── vector_db/          # Chroma vector DB for chatbot knowledge
@@ -55,7 +54,7 @@ CampusSarthi-chatbot/
 1.Clone the repository:
 
 git clone https://github.com/sonali19705/CampusSarthi-chatbot.git
-cd CampusSarthi-chatbot
+#cd CampusSarthi-chatbot
 
 2.Create a virtual environment and activate it:
 
