@@ -40,13 +40,21 @@ It provides instant answers about courses, faculty, library, exams, and general 
 4. **Response is sent back** to the frontend in real-time.
 5. **User sees the answer** in the chat window.
 
-## Project Structure
 CampusSarthi-chatbot/
 |
 +-- frontend/ # HTML, CSS, JS files
+| +-- index.html
+| +-- style.css
+| +-- script.js
+|
 +-- backend/ # FastAPI backend files
+| +-- main.py
+| +-- utils.py
+|
 +-- vector_db/ # Chroma vector DB for chatbot knowledge
+|
 +-- uploads/ # PDFs and CSV files uploaded via admin
+|
 +-- README.md # Project documentation
 +-- requirements.txt # Python dependencies
 
