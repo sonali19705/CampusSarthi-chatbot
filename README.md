@@ -42,12 +42,13 @@ It provides instant answers about courses, faculty, library, exams, and general 
 
 ## Project Structure
 CampusSarthi-chatbot/
-├── frontend/           # HTML, CSS, JS files
-├── backend/            # FastAPI backend files
-├── vector_db/          # Chroma vector DB for chatbot knowledge
-├── uploads/            # PDFs and CSV files uploaded via admin
-├── README.md           # Project documentation
-└── requirements.txt    # Python dependencies
+|
++-- frontend/ # HTML, CSS, JS files
++-- backend/ # FastAPI backend files
++-- vector_db/ # Chroma vector DB for chatbot knowledge
++-- uploads/ # PDFs and CSV files uploaded via admin
++-- README.md # Project documentation
++-- requirements.txt # Python dependencies
 
 ## Installation
 
