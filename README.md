@@ -2,7 +2,7 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Issues](https://img.shields.io/github/issues/<your-username>/campus-sarthi)](https://github.com/<your-username>/campus-sarthi/issues)
+[![Issues](https://img.shields.io/github/issues/sonali19705/CampusSarthi-chatbot)](https://github.com/sonali19705/CampusSarthi-chatbot/issues)
 
 ---
 
@@ -15,7 +15,7 @@ It provides instant answers about courses, faculty, library, exams, and general 
 ## Features
 - Language-agnostic support (English, Hindi, Gujarati, etc.)
 - Quick responses to frequently asked questions (FAQs)
-- Admin interface for uploading PDFs and CSVs to update knowledge base
+- Admin interface for uploading PDFs and CSVs to update the knowledge base
 - Interactive front-end with theme switching
 - Real-time chat responses
 - Easy integration with college websites
@@ -25,14 +25,24 @@ It provides instant answers about courses, faculty, library, exams, and general 
 ## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** FastAPI (Python)
-- **Database:** SQLite / Chroma vector database for semantic search
+- **Database:** Chroma vector database for semantic search
 - **Version Control:** GitHub
 
 ---
 
-## Project Structure
-```text
-campus-sarthi/
+## How it Works
+
+1. **User sends a query** through the chat interface.
+2. **Frontend JavaScript** captures the message and sends it to the backend API.
+3. **FastAPI backend** processes the query:
+   - Checks the vector database (Chroma) for semantic matches.
+   - Searches uploaded PDFs/CSVs for relevant answers.
+4. **Response is sent back** to the frontend in real-time.
+5. **User sees the answer** in the chat window.
+
+
+Project Structure
+CampusSarthi-chatbot/
 │
 ├── frontend/           # HTML, CSS, JS files
 ├── backend/            # FastAPI backend files
@@ -41,14 +51,15 @@ campus-sarthi/
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 
--> Installation :
+Installation
 
-1.Clone the repository:
+Clone the repository:
 
-git clone https://github.com/<your-username>/campus-sarthi.git
-cd campus-sarthi
+git clone https://github.com/sonali19705/CampusSarthi-chatbot.git
+cd CampusSarthi-chatbot
 
-2.Create a virtual environment and activate it:
+
+Create a virtual environment and activate it:
 
 python -m venv venv
 # Linux/Mac
@@ -56,20 +67,22 @@ source venv/bin/activate
 # Windows
 venv\Scripts\activate
 
-3.Install dependencies:
+
+Install dependencies:
 
 pip install -r requirements.txt
 
-4.Run the backend:
+
+Run the backend:
 
 uvicorn backend.main:app --reload
 
-5.Open the frontend:
+
+Open the frontend:
 
 Open frontend/index.html in a web browser.
 
-
-->Usage
+Usage
 
 Chat with Campus Sarthi through the web interface.
 
