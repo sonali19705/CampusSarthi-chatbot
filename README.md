@@ -60,7 +60,8 @@ CampusSarthi-chatbot/
 1.Clone the repository:
 
 git clone https://github.com/sonali19705/CampusSarthi-chatbot.git
-# cd CampusSarthi-chatbot
+
+cd CampusSarthi-chatbot
 
 2.Create a virtual environment and activate it:
 
