@@ -42,6 +42,7 @@ It provides instant answers about courses, faculty, library, exams, and general 
 
 
 ## Project Structure
+```text
 CampusSarthi-chatbot/
 │
 ├── frontend/           # HTML, CSS, JS files
@@ -78,7 +79,7 @@ uvicorn backend.main:app --reload
 
 Open frontend/index.html in a web browser.
 
-#Usage
+# Usage
 
 Chat with Campus Sarthi through the web interface.
 
