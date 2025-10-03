@@ -11,6 +11,11 @@ __pycache__/
 # Vector DBs or embeddings
 vector_db/
 *.chroma
+# Vector DB files
+vector_db/
+*.chroma
+chroma.sqlite
+
 
 # Uploaded files / runtime data
 upload/
