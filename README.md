@@ -40,9 +40,16 @@ It provides instant answers about courses, faculty, library, exams, and general 
 4. **Response is sent back** to the frontend in real-time.
 5. **User sees the answer** in the chat window.
 
+```mermaid
+flowchart TD
+    A[User Query] --> B[Frontend JS]
+    B --> C[FastAPI Backend]
+    C --> D[Vector DB / PDFs / CSVs]
+    D --> C
+    C --> B
+    B --> E[User Response Displayed]
 
-## Project Structure
-```text
+Project Structure
 CampusSarthi-chatbot/
 │
 ├── frontend/           # HTML, CSS, JS files
@@ -52,14 +59,15 @@ CampusSarthi-chatbot/
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 
-## Installation
+Installation
 
-1.Clone the repository:
+Clone the repository:
 
 git clone https://github.com/sonali19705/CampusSarthi-chatbot.git
 cd CampusSarthi-chatbot
 
-2.Create a virtual environment and activate it:
+
+Create a virtual environment and activate it:
 
 python -m venv venv
 # Linux/Mac
@@ -67,19 +75,22 @@ source venv/bin/activate
 # Windows
 venv\Scripts\activate
 
-3.Install dependencies:
+
+Install dependencies:
 
 pip install -r requirements.txt
 
-4.Run the backend:
+
+Run the backend:
 
 uvicorn backend.main:app --reload
 
-5.Open the frontend:
+
+Open the frontend:
 
 Open frontend/index.html in a web browser.
 
-# Usage
+Usage
 
 Chat with Campus Sarthi through the web interface.
 
