@@ -40,6 +40,7 @@ It provides instant answers about courses, faculty, library, exams, and general 
 4. **Response is sent back** to the frontend in real-time.
 5. **User sees the answer** in the chat window.
 
+## Project Structure
 CampusSarthi-chatbot/
 │
 ├── frontend/ # HTML, CSS, JS files
@@ -59,7 +60,7 @@ CampusSarthi-chatbot/
 1.Clone the repository:
 
 git clone https://github.com/sonali19705/CampusSarthi-chatbot.git
-#cd CampusSarthi-chatbot
+# cd CampusSarthi-chatbot
 
 2.Create a virtual environment and activate it:
 
