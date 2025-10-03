@@ -1,0 +1,30 @@
+[
+    {
+        "question": "SMART INDIA HACKATHON 2025\n• Problem Statement ID ...",
+        "answer": "SMART INDIA HACKATHON 2025\n• Problem Statement ID - 25104\n• Problem Statement Title- Language Agnostic\nChatbot\n• Theme- Smart Education\n• PS Category- Software\n• Team ID- 12345\n• Team Name - CampusSarthi"
+    },
+    {
+        "question": "LANGUAGE AGNOSTIC CHATBOT\nCampusSarthi\nDetailed Ex...",
+        "answer": "LANGUAGE AGNOSTIC CHATBOT\nCampusSarthi\nDetailed Explanation of the Proposed Solution:\n Multilingual Query Handling:Understands student queries\nin multiple regional languages + English/Hindi.\n AI-powered NLP: Uses intent detection and entity recognition\nto understand queries.\n Auto Translation: Converts student’s query into standard\nlanguage internally and gives consistent responses.\n Dynamic Knowledge Base: Updated FAQs (fee deadlines,\nscholarships, timetables, etc.).\n 24/7 Availability: Always accessiblez for students on web &\nmobile.\nHow It Addresses the Problem:\n Removes Language Barrier: Students can ask queries in\ntheir preferred language.\n Faster Query Resolution: Instant and automated answers.\n Scalable & Adaptable: Can be deployed across multiple\ncolleges/universities.\n Improves Student Experience:Consistent, reliable, and\nuser-friendly support.\n@SIH Idea submission-Template 2"
+    },
+    {
+        "question": "IMPACT AND BENEFITS\nCampusSarthi\n@SIH Idea submiss...",
+        "answer": "IMPACT AND BENEFITS\nCampusSarthi\n@SIH Idea submission-Template 3"
+    },
+    {
+        "question": "TECHNICAL APPROACH\nCampusSarthi\nCampusSarthi Query...",
+        "answer": "TECHNICAL APPROACH\nCampusSarthi\nCampusSarthi Query Processing Flow\nTechnologies Used\n@SIH Idea submission-Template 4"
+    },
+    {
+        "question": "FEASIBILITY AND VIABILITY\nCampusSarthi\nFeasibility...",
+        "answer": "FEASIBILITY AND VIABILITY\nCampusSarthi\nFeasibility Viability\nLanguage Selection\nWorking of the Chatbot\n@SIH Idea submission-Template 5"
+    },
+    {
+        "question": "RESEARCH AND REFERENCES\nCampusSarthi\nKey research ...",
+        "answer": "RESEARCH AND REFERENCES\nCampusSarthi\nKey research and references for this project are listed below:\n Analyzed multilingual chatbot frameworks and their performance in handling diverse languages.\n Explored open-source libraries: Rasa, Hugging Face Transformers, spaCy.\n Reviewed techniques for intent recognition, entity extraction, and cross-lingual embeddings.\n Examined user engagement metrics for multilingual chatbots in educational and institutional setups\n Conneau, A., et al. (2020). XLM-R: A large-scale multilingual model for cross-lingual natural language\nunderstanding.\n Rasa Documentation – https://rasa.com/docs/\n Hugging Face Transformers – https://huggingface.co/transformers/\n spaCy NLP Library – https://spacy.io/\n Research papers on multilingual chatbots and cross-lingual NLP (Google Scholar search).\n@SIH Idea submission-Template 6"
+    },
+    {
+        "question": "Sonali Kale\n📞 7984726300 | 📧 sonalikale19705@gmail...",
+        "answer": "Sonali Kale\n📞 7984726300 | 📧 sonalikale19705@gmail.com | LinkedIn | GitHub\nPROFESSIONAL SUMMARY\nMotivated and detail-oriented IT student with a strong interest in programming and web development. Currently\nenhancing skills in Java, Python, and Data Structures & Algorithms. Eager to contribute to real-world tech\nprojects, develop practical experience, and strengthen problem solving abilities. Seeking entry-level\nopportunities to learn from industry challenges and grow into a proficient and innovative developer.\nKEY SKILLS\n• Programming Languages: Java, Python, PHP\n• Database: SQL, MySQL\n• Frontend Technologies: HTML, CSS, JavaScript (basic), WordPress\n• Backend & Frameworks: Django, PHP\n• Conceptual Knowledge: Cybersecurity, Blockchain, Computer Networks, Cloud Computing\n• Tools & Platforms: GitHub, VS Code, MySQL, Postman, XAMPP\nEDUCATION\nL.D. College of Engineering, Ahmedabad | Gujarat June 2024 – 2027\nBachelor of Engineering (BE) in Information Technology (Pursuing)\nDR. S. & S.S. Ghandhy College of Engineering, Surat | Gujarat July 2021 – March 2024\nDiploma in Information Technology (Achieved Grade: 9.47/10 CGPA)\nPROJECTS\n1. PM POSHAN Bill Information System\nA web-based application designed to streamline billing, grant allocation, and expense tracking under the\nPM POSHAN (Mid-Day Meal) scheme for schools.\nTech Stack: Python, Django, Django REST Framework, SQL, HTML, CSS, JavaScript, Postman\nKey Contributions:\n• Implemented backend logic using Django and Django REST Framework\n• Connected frontend with backend APIs for dynamic data interaction\n• Designed and managed a database schema to handle over 100+ entries of bill and expense\nrecords, improving data retrieval efficiency.\n• Enabled report generation in under 3 seconds by optimizing backend queries\n• Tested and validated RESTful APIs using Postman\n• Handled user authentication and role-based admin functionalities\nGitHub: https://github.com/sonali19705/poshan-expense-tracker\n2. Drone-Based Construction Progress Tracker (Smart India Hackathon Project)\nIntegrated drone-captured images with BIM (Building Information Modeling) software, providing\nstakeholders with a unified 3D model reflecting real-time construction progress.\nTool used: HTML, CSS, Visual Studio Code\nKey Contributions:\n• Designed and managed the frontend interface to display and navigate drone images.\n• Delivered a working prototype within 24 hours, enabling real-time drone image visualization for\nconstruction tracking.\nINTERNSHIPS EXPERIENCE\n1. Infusion Infotech Pvt Ltd | Surat July 2023 - August\n2023 Web Application Developer\n• Improved web page responsiveness and reduced load time by ~25%, enhancing user engagement\n2. Web Forest Pvt Ltd | Surat September 2022\nFront-End Web Developer\n• Designed and implemented responsive web pages using HTML and CSS, improving mobile usability\nacross 1 internal project."
+    }
+]

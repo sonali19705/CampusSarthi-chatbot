@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+
+<body>
+  <header>
+    <div class="burger" id="burgerBtn">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="logo">🤖 Admin Dashboard</div>
+    <div class="user-controls">
+      <button id="logoutBtn">Logout</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <h2>📌 Menu</h2>
+      <button class="active" onclick="showSection('dashboard', this)">🏠 Dashboard</button>
+      <button onclick="showSection('addFaq', this)">➕ Add FAQ</button>
+      <button onclick="showSection('uploadCsv', this)">📂 Upload CSV</button>
+      <button onclick="showSection('uploadPdf', this)">📑 Upload PDF</button>
+      <button onclick="showSection('manageFaq', this)">🛠 Manage FAQs</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div id="dashboard" class="form-section card active">
+        <h3>🏠 Welcome</h3>
+        <p>Welcome to Admin Panel. Use menu to manage FAQs, upload content, and update DB.</p>
+        
+        <!---->
+        <div class="stats">
+          <div class="stat-card"
+            onclick="showSection('addFaq', document.querySelector('.sidebar button[onclick*=addFaq]'))">
+            ➕ Add FAQ
+          </div>
+
+          <div class="stat-card"
+            onclick="showSection('uploadCsv', document.querySelector('.sidebar button[onclick*=uploadCsv]'))">
+            📂 Upload CSV
+          </div>
+
+          <div class="stat-card"
+            onclick="showSection('uploadPdf', document.querySelector('.sidebar button[onclick*=uploadPdf]'))">
+            📑 Upload PDF
+          </div>
+
+          <div class="stat-card"
+            onclick="showSection('manageFaq', document.querySelector('.sidebar button[onclick*=manageFaq]'))">
+            🛠 Manage FAQs
+          </div>
+
+        </div>
+      </div>
+
+      <div id="addFaq" class="form-section card">
+        <h3>➕ Add FAQ</h3>
+        <textarea id="faqQuestion" placeholder="Enter Question..."></textarea>
+        <textarea id="faqAnswer" placeholder="Enter Answer..."></textarea>
+        <button class="action" onclick="addFAQ()">Submit FAQ</button>
+        <div id="faqStatus" class="status"></div>
+      </div>
+
+      <div id="manageFaq" class="form-section card">
+        <h3>🛠 Manage FAQs</h3>
+        <input type="text" id="faqSearch" placeholder="🔍 Search FAQs..." oninput="debouncedSearch()" />
+        <div id="faqList"></div>
+      </div>
+
+      <div id="uploadCsv" class="form-section card">
+        <h3>📂 Upload CSV</h3>
+        <input type="file" id="csvFile" accept=".csv" />
+        <button class="action" onclick="uploadCSV()">Upload CSV</button>
+        <div id="csvStatus" class="status"></div>
+      </div>
+
+      <div id="uploadPdf" class="form-section card">
+        <h3>📑 Upload PDF</h3>
+        <input type="file" id="pdfFile" accept=".pdf" />
+        <button class="action" onclick="uploadPDF()">Upload PDF</button>
+        <div id="pdfStatus" class="status"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional small script for search debounce -->
+  <script>
+    let searchTimeout;
+    function debouncedSearch() {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const query = document.getElementById('faqSearch').value;
+        searchFAQs(query); // make sure this function exists in admin.js
+      }, 300);
+    }
+
+    // Sidebar toggle for mobile (optional)
+    const burgerBtn = document.getElementById('burgerBtn');
+    const sidebar = document.querySelector('.sidebar');
+    burgerBtn.addEventListener('click', () => sidebar.classList.toggle('open'));
+  </script>
+
+  <script src="admin.js"></script>
+</body>
+
+</html>

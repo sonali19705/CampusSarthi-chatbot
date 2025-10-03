@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Sarthi | College Assistant</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico">
+</head>
+
+<body>
+    <div id="admin-btn">
+    <a href="../Admin_UI/login.html" class="admin-button">
+        <img src="/static/images/admin-icon.png" alt="Admin" width="22" height="22">
+        Admin
+    </a>
+</div>
+
+    <div class="page-content">
+        <h1>Welcome to CampusSarthi, your college assistant.</h1>
+        <p>This is a demo page. The chatbot is in the bottom-right corner.</p>
+    </div>
+
+    <!-- Chat Launcher Button -->
+    <div class="chat-launcher" id="chat-launcher" aria-label="Open chat" tabindex="0">
+        <img src="/static/images/bot-favicon.png" alt="Open chat" class="chat-icon">
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chat-widget" aria-live="polite">
+
+        <!-- Language Selector -->
+        <div class="lang-menu hidden" id="lang-menu">
+            <button class="lang-option" data-lang="en-US">English</button>
+            <button class="lang-option" data-lang="hi-IN">हिंदी</button>
+            <button class="lang-option" data-lang="gu-IN">ગુજરાતી</button>
+            <button class="lang-option" data-lang="mr-IN">मराठी</button>
+            <button class="lang-option" data-lang="bn-IN">বাংলা</button>
+            <button class="lang-option" data-lang="ta-IN">தமிழ்</button>
+            <button class="lang-option" data-lang="te-IN">తెలుగు</button>
+            <button class="lang-option" data-lang="kn-IN">ಕನ್ನಡ</button>
+            <button class="lang-option" data-lang="ml-IN">മലയാളം</button>
+            <button class="lang-option" data-lang="pa-IN">ਪੰਜਾਬੀ</button>
+            <button class="lang-option" data-lang="raj-IN">राजस्थानी</button>
+        </div>
+
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="avatar" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="30px" height="30px">
+                    <path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zm0 8.47L4.53 7.31 12 4.44 19.47 7.31 12 11.47zM5 13.18V17h14v-3.82l-7 3.82-7-3.82z"/>
+                </svg>
+            </div>
+            <div class="bot-info">
+                <div class="bot-name">CampusSarthi</div>
+                <div class="bot-tagline">Your 24/7 college guide</div>
+            </div>
+            <div class="header-icons">
+                <button id="theme-switcher-btn" class="header-icon" aria-label="Toggle dark mode" tabindex="0">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="22px" height="22px">
+                        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-5.4-5.4c0-1.54.65-2.94 1.67-3.95A8.962 8.962 0 0 0 12 3z"/>
+                    </svg>
+                </button>
+                <button id="lang-switcher-btn" class="lang-icon" aria-label="Switch language" tabindex="0" style="background:none;border:none;padding:0;cursor:pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.34.16-2h4.68c.09.66.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 12c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38c.08-.66.14-1.32.14-2z"/>
+                    </svg>
+                </button>   
+            </div>
+        </div>
+
+        <!-- Chat Body -->
+        <div class="chat-body" id="chat-body" aria-live="polite" role="log"></div>
+
+        <!-- Chat Input -->
+        <div class="chat-input-area">
+            <button id="voice-input-btn" class="input-icon-btn" aria-label="Voice input" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#666" width="24px" height="24px">
+                    <path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/>
+                </svg>
+            </button>
+            <input type="text" id="chat-input" placeholder="Type or say something..." autocomplete="off" aria-label="Type your message">
+            <button id="send-btn" class="input-icon-btn" aria-label="Send message" tabindex="0">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="24px" height="24px">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
