@@ -13,9 +13,9 @@ vector_db/
 *.chroma
 
 # Uploaded files / runtime data
-upload/
-*.csv
-*.pdf
+#upload/
+#*.csv
+#*.pdf
 
 
 # IDE / editor
