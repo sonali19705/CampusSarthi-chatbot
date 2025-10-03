@@ -41,18 +41,18 @@ It provides instant answers about courses, faculty, library, exams, and general 
 5. **User sees the answer** in the chat window.
 
 CampusSarthi-chatbot/
-frontend/ # HTML, CSS, JS files
-index.html
-style.css
-script.js
-backend/ # FastAPI backend files
-main.py
-utils.py
-vector_db/ # Chroma vector DB for chatbot knowledge
-uploads/ # PDFs and CSV files uploaded via admin
-README.md # Project documentation
-requirements.txt # Python dependencies
-
+│
+├── frontend/ # HTML, CSS, JS files
+│ ├── index.html
+│ ├── style.css
+│ └── script.js
+├── backend/ # FastAPI backend files
+│ ├── main.py
+│ └── utils.py
+├── vector_db/ # Chroma vector DB for chatbot knowledge
+├── uploads/ # PDFs and CSV files uploaded via admin
+├── README.md # Project documentation
+└── requirements.txt # Python dependencies
 
 ## Installation
 
