@@ -1,3 +1,32 @@
+# Virtual environment
 venv/
+.env/
+*.env
+
+# Bytecode / caches
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+# Vector DBs or embeddings
+vector_db/
+*.chroma
+
+# Uploaded files / runtime data
+upload/
+*.csv
+*.pdf
+
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
